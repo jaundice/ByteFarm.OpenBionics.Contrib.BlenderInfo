@@ -60,7 +60,7 @@ namespace ByteFarm.OpenBionics.Contrib.BlenderInfo
                 ? ReadInt(fs, fileHeader.Endianness)
                 : ReadLong(fs, fileHeader.Endianness);
 
-            var sdnaIndex = ReadInt(fs, Endianness.LittleEndian);
+            var sdnaIndex = ReadInt(fs, fileHeader.Endianness);
 
             var count = ReadInt(fs, fileHeader.Endianness);
 
